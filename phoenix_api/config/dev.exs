@@ -23,11 +23,8 @@ config :phoenix_api, PhoenixApiWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "LOpUFi3u+H+6ECfC06KzZ91a3gRVOjQs73ulRvi6OuMpruJP8G3iOCvYzwcqOdw9",
-  watchers: [
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
-  ]
+  secret_key_base: "PB93y0nlkEE6+AUdfDwAEo4zJ8qH0GFnKr1xM6pj9Y4f80j4MBeRaD3p77e8lttB",
+  watchers: []
 
 # ## SSL Support
 #
@@ -52,16 +49,6 @@ config :phoenix_api, PhoenixApiWeb.Endpoint,
 # configured to run both http and https servers on
 # different ports.
 
-# Watch static and templates for browser reloading.
-config :phoenix_api, PhoenixApiWeb.Endpoint,
-  live_reload: [
-    patterns: [
-      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"priv/gettext/.*(po)$",
-      ~r"lib/phoenix_api_web/(controllers|live|components)/.*(ex|heex)$"
-    ]
-  ]
-
 # Enable dev routes for dashboard and mailbox
 config :phoenix_api, dev_routes: true
 
@@ -74,6 +61,3 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
-
-# Disable swoosh api client as it is only required for production adapters.
-config :swoosh, :api_client, false

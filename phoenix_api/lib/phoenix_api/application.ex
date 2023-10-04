@@ -14,8 +14,6 @@ defmodule PhoenixApi.Application do
       PhoenixApi.Repo,
       # Start the PubSub system
       {Phoenix.PubSub, name: PhoenixApi.PubSub},
-      # Start Finch
-      {Finch, name: PhoenixApi.Finch},
       # Start the Endpoint (http/https)
       PhoenixApiWeb.Endpoint
       # Start a worker by calling: PhoenixApi.Worker.start_link(arg)
