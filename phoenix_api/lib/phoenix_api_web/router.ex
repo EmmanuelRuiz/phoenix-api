@@ -7,5 +7,7 @@ defmodule PhoenixApiWeb.Router do
 
   scope "/api", PhoenixApiWeb do
     pipe_through :api
+    get "/", DefaultController, :index
+
   end
 end
