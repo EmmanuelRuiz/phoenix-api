@@ -10,7 +10,7 @@ defmodule PhoenixApi.Accounts.Account do
     has_one :user, PhoenixApi.Users.User
     timestamps()
   end
-
+  #validación del email
   @doc false
   def changeset(account, attrs) do
     account
