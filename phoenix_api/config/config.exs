@@ -26,6 +26,13 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+
+ #config guardian
+ config :phoenix_api, PhoenixApiWeb.Auth.Guardian,
+ issuer: "phoenix_api",
+ secret_key: "Qyji1EO8f0COeOBfLk8qdOd7VqInUkiwpos+8GkKc+dy5TE9AHROixrGI9qU8LSi"
+
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 

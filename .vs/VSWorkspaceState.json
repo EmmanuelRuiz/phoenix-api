@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\phoenix_api",
+    "\\phoenix_api\\lib",
+    "\\phoenix_api\\lib\\phoenix_api_web",
+    "\\phoenix_api\\lib\\phoenix_api_web\\auth"
+  ],
+  "SelectedNode": "\\phoenix_api\\lib\\phoenix_api_web\\auth\\guardian.ex",
+  "PreviewInSolutionExplorer": false
+}
